@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0B0C10; /* Dark Background Color */
+  color: #C5C6C7; /* Light Gray Text Color */
+}
+
+/* Additional styles for links */
+a {
+  color: #66FCF1; /* Cyan Color */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+a:hover {
+  color: #54FFD6; /* Lighter Cyan on hover */
+}
