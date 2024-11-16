@@ -6,13 +6,20 @@ export default function SkillsPage() {
         <div>
         <label>Python</label>
           <div className="w-full bg-gray-700 rounded-full h-2.5">
-            <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "80%" }}></div>
+            <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "90%" }}></div>
           </div>
           <label>C</label>
           <div className="w-full bg-gray-700 rounded-full h-2.5">
             <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "80%" }}></div>
           </div>
-
+          <label>HTML</label>
+          <div className="w-full bg-gray-700 rounded-full h-2.5">
+            <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "90%" }}></div>
+          </div>
+          <label>CSS</label>
+          <div className="w-full bg-gray-700 rounded-full h-2.5">
+            <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "80%" }}></div>
+          </div>
           <label>JavaScript</label>
           <div className="w-full bg-gray-700 rounded-full h-2.5">
             <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: "80%" }}></div>
@@ -21,4 +28,5 @@ export default function SkillsPage() {
       </div>
     );
   }
+  
   
