@@ -18,10 +18,10 @@ export default function HomePage() {
       <section>
         <h1 className="text-7xl font-extrabold text-cyan mb-4">Hello!</h1>
         <p className="text-lg leading-relaxed">
-          As a web developer, I thrive on transforming creative concepts into functional digital solutions.
-          My passion lies in crafting seamless user experiences and building robust backends. 
-          I embrace continuous learning and actively seek opportunities to tackle real-world challenges. 
-          When not coding, I love exploring innovative technologies and honing my skills through exciting projects.
+          Enthusiastic and dedicated third-year student. Eager to apply
+theoretical knowledge gained in coursework to real-world
+challenges. A quick learner looking forward to gain more
+practical experience through internships.
         </p>
       </section>
 
