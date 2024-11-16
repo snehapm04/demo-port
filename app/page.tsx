@@ -18,7 +18,7 @@ export default function HomePage() {
       <section>
         <h1 className="text-7xl font-extrabold text-cyan mb-4">Hello!</h1>
         <p className="text-lg leading-relaxed">
-          Enthusiastic and dedicated third-year student. Eager to apply
+          I'm an enthusiastic and dedicated third-year student. Eager to apply
 theoretical knowledge gained in coursework to real-world
 challenges. A quick learner looking forward to gain more
 practical experience through internships.
