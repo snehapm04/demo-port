@@ -37,12 +37,12 @@ export default function Layout({ children }: LayoutProps) {
             >
               Projects
             </Link>
-            <Link 
+            {/*<Link 
               href="/certifications" 
               className="bg-slate hover:bg-hoverSlate transition duration-300 p-2 rounded"
             >
               Certifications
-            </Link>
+            </Link>*/}
           </nav>
         </header>
         <main className="pt-10 pl-10">{children}</main>
