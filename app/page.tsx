@@ -51,13 +51,13 @@ practical experience through internships.
               <div className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-3 h-3 rounded-full bg-cyan" />
               <h3 className="text-lg font-bold">Easwari Engineering College, Ramapuram</h3>
               <p className="text-gray-400">B.E in Computer Science and Engineering (AI & ML)</p>
-              <p className="text-gray-400">2020 - Present</p>
+              <p className="text-gray-400">2022 - Present</p>
             </div>
             <div className="pl-6 relative">
               <div className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-3 h-3 rounded-full bg-cyan" />
               <h3 className="text-lg font-bold">Apex Pon Vidyashram</h3>
               <p className="text-gray-400">High School</p>
-              <p className="text-gray-400">2018 - 2020</p>
+              <p className="text-gray-400">2020 - 2022</p>
             </div>
           </div>
         </div>
