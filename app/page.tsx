@@ -5,23 +5,23 @@ import { MdEmail, MdPhone } from 'react-icons/md';
 export default function HomePage() {
   return (
     <div className="font-poppins space-y-10 max-w-3xl mx-auto p-8 text-center text-lightGray">
-      {/* Profile Picture Section */}
+      {/* Profile Picture Section 
       <div className="relative mb-10">
         <img
-          src="/path/to/your/profile-picture.jpg" // Replace with your actual profile picture path
+          src="pic.jpg" // Replace with your actual profile picture path
           alt="Profile"
           className="w-32 h-32 rounded-full border-4 border-cyan transition-transform duration-300 transform hover:scale-105 mx-auto"
         />
-      </div>
+      </div>*/}
 
       {/* Implicit About Me Section */}
       <section>
         <h1 className="text-7xl font-extrabold text-cyan mb-4">Hello!</h1>
         <p className="text-lg leading-relaxed">
-          Enthusiastic and dedicated third-year student. Eager to apply
-theoretical knowledge gained in coursework to real-world
-challenges. A quick learner looking forward to gain more
-practical experience through internships.
+          As a web developer, I thrive on transforming creative concepts into functional digital solutions.
+          My passion lies in crafting seamless user experiences and building robust backends. 
+          I embrace continuous learning and actively seek opportunities to tackle real-world challenges. 
+          When not coding, I love exploring innovative technologies and honing my skills through exciting projects.
         </p>
       </section>
 
@@ -40,7 +40,7 @@ practical experience through internships.
       </section>
 
       {/* Spacing between sections */}
-      <div className="my-20"></div>
+      <div className="my-100"></div>
 
       {/* Education Section as Timeline */}
       <section className="flex items-center justify-between">
@@ -70,16 +70,16 @@ practical experience through internships.
       <section>
         <h2 className="text-6xl font-semibold text-cyan mb-4">Contact Me</h2>
         <div className="flex justify-center space-x-6 text-3xl">
-          <a href="mailto:your.email@example.com" className="hover:text-blue-400" title="Email">
+          <a href="mailto:pmsneha1234@gmail.com" className="hover:text-blue-400" title="Email">
             <MdEmail />
           </a>
-          <a href="tel:+123456789" className="hover:text-blue-400" title="Phone">
+          <a href="tel:+6383202447" className="hover:text-blue-400" title="Phone">
             <MdPhone />
           </a>
           <a href="https://github.com/snehapm04" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400" title="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/yourus" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/sneha-mukunthan-95b86a2b6/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400" title="LinkedIn">
             <FaLinkedin />
           </a>
         </div>
