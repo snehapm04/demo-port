@@ -7,7 +7,7 @@ export default function HomePage() {
     <div className="font-poppins space-y-10 max-w-3xl mx-auto p-8 text-center text-lightGray">
       {/* Profile Picture Section */}
       {/* Uncomment and replace 'pic.jpg' with the actual profile picture path if needed */}
-      {/* 
+      
       <div className="relative mb-10">
         <img
           src="pic.jpg" // Replace with your actual profile picture path
@@ -15,7 +15,7 @@ export default function HomePage() {
           className="w-32 h-32 rounded-full border-4 border-cyan transition-transform duration-300 transform hover:scale-105 mx-auto"
         />
       </div>
-      */}
+      
 
       {/* About Me Section */}
       <section>
