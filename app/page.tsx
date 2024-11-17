@@ -10,7 +10,7 @@ export default function HomePage() {
       
       <div className="relative mb-10">
         <img
-          src="./public/pic.jpg" // Replace with your actual profile picture path
+          src="/public/pic.jpg" // Replace with your actual profile picture path
           alt="Profile"
           className="w-32 h-32 rounded-full border-4 border-cyan transition-transform duration-300 transform hover:scale-105 mx-auto"
         />
