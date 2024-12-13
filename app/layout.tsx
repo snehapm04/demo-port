@@ -1,51 +1,74 @@
-// app/layout.tsx
+"use client";
 import Link from 'next/link';
 import './globals.css';
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
+import { FaTools, FaBriefcase, FaProjectDiagram } from 'react-icons/fa'; // Import relevant icons
 
 type LayoutProps = {
   children: ReactNode;
 };
 
 export default function Layout({ children }: LayoutProps) {
+  const [activeLink, setActiveLink] = useState<string>(''); // To handle active link state
+
+  // Function to handle link clicks
+  const handleClick = (link: string) => {
+    setActiveLink(link);
+  };
+
   return (
-    <html lang="en">
-      <head>
-        {/* Include viewport meta for mobile devices */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
-      <body className="bg-dark text-lightGray min-h-screen">
-        <header className="flex justify-between items-center p-4 md:p-6">
+    <html>
+      <body className="bg-dark text-lightGray">
+        <header className="flex justify-between items-start p-4">
           {/* Name as a clickable link to return to the home page */}
           <Link href="/" passHref>
-            <div className="text-xl md:text-2xl font-bold text-cyan animate-pulse cursor-pointer">
+            <div className="text-2xl font-bold text-cyan animate-pulse cursor-pointer">
               I'm Sneha...
             </div>
           </Link>
-          {/* Vertical menu bar on the right side */}
-          <nav className="fixed top-16 right-4 lg:top-10 lg:right-10 flex flex-col space-y-3 md:space-y-4 lg:space-y-6 text-base md:text-lg pr-2 lg:pr-4">
-            <Link 
-              href="/skills" 
-              className="bg-slate hover:bg-hoverSlate transition duration-300 p-2 rounded"
-            >
-              Skills
+          {/* Vertical menu bar on the right side with icons */}
+          <nav className="fixed right-10 top-50 flex flex-col space-y-6 text-lg pr-4">
+            <Link href="/skills" passHref>
+              <div
+                className={`relative flex items-center space-x-2 p-2 rounded cursor-pointer transition duration-300
+                  ${activeLink === 'skills' ? 'bg-cyan' : 'bg-slate hover:bg-hoverSlate'}`}
+                onClick={() => handleClick('skills')}
+              >
+                <FaTools size={24} className="text-lightGray" />
+                <span className="absolute left-full ml-2 opacity-0 transform translate-x-4 transition-all duration-300 hover:opacity-100 hover:translate-x-0">
+                  Skills
+                </span>
+              </div>
             </Link>
-            <Link 
-              href="/experience" 
-              className="bg-slate hover:bg-hoverSlate transition duration-300 p-2 rounded"
-            >
-              Experience
+            <Link href="/experience" passHref>
+              <div
+                className={`relative flex items-center space-x-2 p-2 rounded cursor-pointer transition duration-300
+                  ${activeLink === 'experience' ? 'bg-cyan' : 'bg-slate hover:bg-hoverSlate'}`}
+                onClick={() => handleClick('experience')}
+              >
+                <FaBriefcase size={24} className="text-lightGray" />
+                <span className="absolute left-full ml-2 opacity-0 transform translate-x-4 transition-all duration-300 hover:opacity-100 hover:translate-x-0">
+                  Experience
+                </span>
+              </div>
             </Link>
-            <Link 
-              href="/projects" 
-              className="bg-slate hover:bg-hoverSlate transition duration-300 p-2 rounded"
-            >
-              Projects
+            <Link href="/projects" passHref>
+              <div
+                className={`relative flex items-center space-x-2 p-2 rounded cursor-pointer transition duration-300
+                  ${activeLink === 'projects' ? 'bg-cyan' : 'bg-slate hover:bg-hoverSlate'}`}
+                onClick={() => handleClick('projects')}
+              >
+                <FaProjectDiagram size={24} className="text-lightGray" />
+                <span className="absolute left-full ml-2 opacity-0 transform translate-x-4 transition-all duration-300 hover:opacity-100 hover:translate-x-0">
+                  Projects
+                </span>
+              </div>
             </Link>
           </nav>
         </header>
-        <main className="pt-8 px-4 md:px-6 lg:px-10">{children}</main>
+        <main className="pt-10 pl-10">{children}</main>
       </body>
     </html>
   );
 }
+
