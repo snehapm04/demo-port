@@ -34,10 +34,8 @@ export default function Layout({ children }: LayoutProps) {
                   ${activeLink === 'skills' ? 'bg-cyan' : 'bg-slate hover:bg-hoverSlate'}`}
                 onClick={() => handleClick('skills')}
               >
+                <span className="ml-2">Skills</span>
                 <FaTools size={24} className="text-lightGray" />
-                <span className="absolute left-full ml-2 opacity-0 transform translate-x-4 transition-all duration-300 hover:opacity-100 hover:translate-x-0">
-                  Skills
-                </span>
               </div>
             </Link>
             <Link href="/experience" passHref>
@@ -46,10 +44,8 @@ export default function Layout({ children }: LayoutProps) {
                   ${activeLink === 'experience' ? 'bg-cyan' : 'bg-slate hover:bg-hoverSlate'}`}
                 onClick={() => handleClick('experience')}
               >
+                <span className="ml-2">Experience</span>
                 <FaBriefcase size={24} className="text-lightGray" />
-                <span className="absolute left-full ml-2 opacity-0 transform translate-x-4 transition-all duration-300 hover:opacity-100 hover:translate-x-0">
-                  Experience
-                </span>
               </div>
             </Link>
             <Link href="/projects" passHref>
@@ -58,10 +54,8 @@ export default function Layout({ children }: LayoutProps) {
                   ${activeLink === 'projects' ? 'bg-cyan' : 'bg-slate hover:bg-hoverSlate'}`}
                 onClick={() => handleClick('projects')}
               >
+                <span className="ml-2">Projects</span>
                 <FaProjectDiagram size={24} className="text-lightGray" />
-                <span className="absolute left-full ml-2 opacity-0 transform translate-x-4 transition-all duration-300 hover:opacity-100 hover:translate-x-0">
-                  Projects
-                </span>
               </div>
             </Link>
           </nav>
@@ -71,4 +65,3 @@ export default function Layout({ children }: LayoutProps) {
     </html>
   );
 }
-
