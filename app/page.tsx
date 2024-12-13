@@ -4,7 +4,7 @@ import { MdEmail, MdPhone } from 'react-icons/md';
 
 export default function HomePage() {
   return (
-    <div className="font-poppins space-y-10 max-w-3xl mx-auto p-8 text-center text-lightGray">
+    <div className="font-poppins space-y-10 max-w-2xl mx-auto p-8 text-center text-lightGray">
       {/* Profile Picture Section */}
       {/* Uncomment and replace 'pic.jpg' with the actual profile picture path if needed */}
       
@@ -29,7 +29,7 @@ export default function HomePage() {
 
       {/* Skills Section */}
       <section className="mb-12">
-        <h2 className="text-6xl font-semibold text-cyan mb-6 text-left">Skills</h2>
+        <h2 className="text-5xl font-semibold text-cyan mb-6 text-left">Skills</h2>
         <div className="flex justify-center space-x-8 text-4xl">
           <FaHtml5 className="hover:text-orange-500 transition duration-300" title="HTML5" />
           <FaCss3Alt className="hover:text-blue-500 transition duration-300" title="CSS3" />
@@ -40,29 +40,31 @@ export default function HomePage() {
       </section>
 
       {/* Education Section */}
-      <section>
-        <h2 className="text-6xl font-semibold text-cyan mb-6 text-left">Education</h2>
-        <div className="relative">
-          <div className="border-l-4 border-cyan ml-10">
-            <div className="mb-8 pl-6 relative">
-              <div className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-3 h-3 rounded-full bg-cyan" />
-              <h3 className="text-lg font-bold">Easwari Engineering College, Ramapuram</h3>
-              <p className="text-gray-400">B.E in Computer Science and Engineering (AI & ML)</p>
-              <p className="text-gray-400">2022 - Present</p>
-            </div>
-            <div className="pl-6 relative">
-              <div className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-3 h-3 rounded-full bg-cyan" />
-              <h3 className="text-lg font-bold">Apex Pon Vidyashram</h3>
-              <p className="text-gray-400">High School</p>
-              <p className="text-gray-400">2020 - 2022</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section>
+  <h2 className="text-5xl font-semibold text-cyan mb-6 text-left">Education</h2>
+  <div className="relative">
+    <div className="border-l-4 border-cyan ml-10">
+      <div className="mb-8 pl-6 relative">
+        <div className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-3 h-3 rounded-full bg-cyan" />
+        <h3 className="text-lg font-bold text-left">Easwari Engineering College, Ramapuram</h3>
+        <p className="text-gray-400 text-left">B.E in Computer Science and Engineering (AI & ML)</p>
+        <p className="text-gray-400 text-left">2022 - Present</p>
+      </div>
+      <div className="pl-6 relative">
+        <div className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-3 h-3 rounded-full bg-cyan" />
+        <h3 className="text-lg font-bold text-left">Apex Pon Vidyashram</h3>
+        <p className="text-gray-400 text-left">High School</p>
+        <p className="text-gray-400 text-left">2020 - 2022</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Contact Me Section */}
       <section>
-        <h2 className="text-6xl font-semibold text-cyan mb-6">Contact Me</h2>
+        <h2 className="text-5xl font-semibold text-cyan mb-6">Contact Me</h2>
         <div className="flex justify-center space-x-6 text-3xl">
           <a href="mailto:pmsneha1234@gmail.com" className="hover:text-blue-400 transition duration-300" title="Email">
             <MdEmail />
